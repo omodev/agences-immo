@@ -1,0 +1,23 @@
+{# src/AGPlatformBundle/Resources/views/Agence/vendre.html.twig #}
+
+{% extends "AGPlatformBundle:Agence:layoutheader.html.twig" %}
+
+
+
+{% block offset %}
+<h1 class="intro"> La gestion de vente est devenue un jeu d'enfant avec IMMOBILIA   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+ </h1>
+  <hr class="intro-divider" >
+  <ul class="nav nav-pills nav-stacked">
+           <li><h1 class="page-header ver2">Ajouter une maison pour qu'elle soit disponible à la vente: <a href="{{ path('ag_platform_ajouter') }}" class="ofbutton ofbutton-blue" ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> AJOUTER</a></li>
+		   <li><h1 class="page-header ver2">Gérer les maisons disponibles à la vente : <a href="{{ path('ag_platform_vconsulter') }}" class="ofbutton ofbutton-blue" ><i class="fa fa-bar-chart" aria-hidden="true"></i> Gérer</a></li>
+
+          <li><h1 class="page-header ver2">chercher par ville <i class="fa fa-search" aria-hidden="true"></i></h1>
+
+              <form method="post" action="AgenceController.php" >
+             <input type="text" style="width:50%; margin-left:300px;">
+            </form>
+		  </li>
+    </ul>
+
+{% endblock %}

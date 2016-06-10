@@ -1,0 +1,42 @@
+{% extends "AGPlatformBundle:Agence:layoutheader.html.twig" %}
+
+{% block offset %}
+<h1 class="intro"> Les maisons vendues  <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+<div class="container">
+<table class="table">
+<tr>
+  <th>owner</th>
+  <th>prixI</th>
+  <th>dateI</th>
+  <th>surface</th>
+  <th>ville</th>
+  <th>rue</th>
+<th>prixF </th>
+<th>dateF </th>
+
+
+
+
+ </tr>
+
+
+<tr>
+  {% for annonce in listannoncevendus %}
+    <td>{{ annonce.owner }}</td>
+    <td>{{ annonce.prix }}</td>
+	<td>{{ annonce.datei|date("d/M/Y") }}</td>
+	<td>{{ annonce.surface }}</td>
+	<td>{{ annonce.ville }}</td>
+	<td>{{ annonce.rue }}</td>
+  <td>{{ annonce.prixf }}</td>
+  <td>{{ annonce.datef|date("d/M/Y") }}</td>
+
+
+
+</tr>
+
+
+  {% endfor %}
+</table>
+</div>
+{% endblock %}

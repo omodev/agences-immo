@@ -1,0 +1,61 @@
+ag_platform_home:
+    path:     /agence
+    defaults: { _controller: AGPlatformBundle:Agence:home }
+
+ag_platform_vendre:
+    path:      /platform/vendre
+    defaults:  { _controller: AGPlatformBundle:Agence:vendre }
+
+ag_platform_louer:
+    path:      /platform/louer
+    defaults:  { _controller: AGPlatformBundle:Agence:louer }
+
+ag_platform_ajouter:
+    path:      /platform/ajouter
+    defaults:  { _controller: AGPlatformBundle:Agence:ajouter }
+
+ag_platform_rechercher:
+    path:      /platform/rechercher
+    defaults:  { _controller: AGPlatformBundle:Agence:rechercher }
+
+
+ag_platform_vconsulter:
+    path:      /platform/consulter
+    defaults:  { _controller: AGPlatformBundle:Agence:vconsulter }
+
+ag_platform_vsupprimer:
+    path:      /platform/delete/{id}
+    defaults:  { _controller: AGPlatformBundle:Agence:vsupprimer }
+
+ag_platform_vmodifier:
+    path:      /platform/modifier/{id}
+    defaults:  { _controller: AGPlatformBundle:Agence:vmodifier }
+
+ag_platform_vvendre:
+    path:      /platform/vvendre/{id}
+    defaults:  { _controller: AGPlatformBundle:Agence:vvendre }
+ag_platform_vvendu:
+    path:      /platform/vendus
+    defaults:  { _controller: AGPlatformBundle:Agence:vvendu }
+
+ag_platform_lconsulter:
+    path:      /platform/consulterl
+    defaults:  { _controller: AGPlatformBundle:Agence:lconsulter }
+ag_platform_lsupprimer:
+    path:      /platform/delete/{id}
+    defaults:  { _controller: AGPlatformBundle:Agence:lsupprimer }
+
+ag_platform_ajouterl:
+    path:      /platform/ajouterl
+    defaults:  { _controller: AGPlatformBundle:Agence:ajouterl }
+
+ag_platform_lmodifier:
+    path:      /platform/modifier/{id}
+    defaults:  { _controller: AGPlatformBundle:Agence:lmodifier }
+
+ag_platform_llouer:
+    path:      /platform/llouer/{id}
+    defaults:  { _controller: AGPlatformBundle:Agence:llouer }
+ag_platform_lloue:
+    path:      /platform/loues
+    defaults:  { _controller: AGPlatformBundle:Agence:lloue }

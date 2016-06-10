@@ -1,0 +1,38 @@
+{% extends "AGPlatformBundle:Agence:layoutheader.html.twig" %}
+{% block offset %}
+<h1 class="intro"> Gérer vos maisons dispo à louer aisement<i class="fa fa-hand-o-down" aria-hidden="true"></i> </h1>
+<div class="container">
+<table class="table">
+<tr>
+  <th>owner</th>
+  <th>prix</th>
+  <th>date</th>
+  <th>surface</th>
+  <th>ville</th>
+  <th>rue</th>
+  <th>supprimer</th>
+  <th>modifier</th>
+  <th>louer</th>
+ </tr>
+
+
+<tr>
+  {% for annonce in listannonce %}
+    <td>{{ annonce.owner }}</td>
+    <td>{{ annonce.prix }}</td>
+	<td>{{ annonce.datei|date("d/M/Y") }}</td>
+	<td>{{ annonce.surface }}</td>
+	<td>{{ annonce.ville }}</td>
+	<td>{{ annonce.rue }}</td>
+	<td><a href="{{ path('ag_platform_lsupprimer', {'id':annonce.id}) }}"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+	<td><a href="{{ path('ag_platform_lmodifier', {'id':annonce.id}) }}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+  <td><a href="{{ path('ag_platform_llouer', {'id':annonce.id}) }}"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></td>
+
+</tr>
+
+  {% else %}
+    <h2>Pas de maisons à louer.</h2>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}

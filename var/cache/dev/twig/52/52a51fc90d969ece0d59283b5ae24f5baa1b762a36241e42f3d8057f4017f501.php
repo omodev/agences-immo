@@ -1,0 +1,174 @@
+<?php
+
+/* AGPlatformBundle:Agence:vvendu.html.twig */
+class __TwigTemplate_4542738c9aa6a802994b990a12e4a2f8df36f5e5e517991b9a4bb9fd2636c3f3 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 1
+        $this->parent = $this->loadTemplate("AGPlatformBundle:Agence:layoutheader.html.twig", "AGPlatformBundle:Agence:vvendu.html.twig", 1);
+        $this->blocks = array(
+            'offset' => array($this, 'block_offset'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "AGPlatformBundle:Agence:layoutheader.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $__internal_6a2f9846b0ca2b53eb549d59faa332b7246021f3f142372a880024ce535c4c18 = $this->env->getExtension("native_profiler");
+        $__internal_6a2f9846b0ca2b53eb549d59faa332b7246021f3f142372a880024ce535c4c18->enter($__internal_6a2f9846b0ca2b53eb549d59faa332b7246021f3f142372a880024ce535c4c18_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AGPlatformBundle:Agence:vvendu.html.twig"));
+
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_6a2f9846b0ca2b53eb549d59faa332b7246021f3f142372a880024ce535c4c18->leave($__internal_6a2f9846b0ca2b53eb549d59faa332b7246021f3f142372a880024ce535c4c18_prof);
+
+    }
+
+    // line 3
+    public function block_offset($context, array $blocks = array())
+    {
+        $__internal_a615975e435ab3dd3e92c31adfe7687e4154a2c02afe3a985e8435d2c6b84273 = $this->env->getExtension("native_profiler");
+        $__internal_a615975e435ab3dd3e92c31adfe7687e4154a2c02afe3a985e8435d2c6b84273->enter($__internal_a615975e435ab3dd3e92c31adfe7687e4154a2c02afe3a985e8435d2c6b84273_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "offset"));
+
+        // line 4
+        echo "<h1 class=\"intro\"> Les maisons vendues  <i class=\"fa fa-hand-o-down\" aria-hidden=\"true\"></i>
+<div class=\"container\">
+<table class=\"table\">
+<tr>
+  <th>owner</th>
+  <th>prixI</th>
+  <th>dateI</th>
+  <th>surface</th>
+  <th>ville</th>
+  <th>rue</th>
+<th>prixF </th>
+<th>dateF </th>
+
+
+
+
+ </tr>
+
+
+<tr>
+  ";
+        // line 24
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["listannoncevendus"]) ? $context["listannoncevendus"] : $this->getContext($context, "listannoncevendus")));
+        foreach ($context['_seq'] as $context["_key"] => $context["annonce"]) {
+            // line 25
+            echo "    <td>";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["annonce"], "owner", array()), "html", null, true);
+            echo "</td>
+    <td>";
+            // line 26
+            echo twig_escape_filter($this->env, $this->getAttribute($context["annonce"], "prix", array()), "html", null, true);
+            echo "</td>
+\t<td>";
+            // line 27
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["annonce"], "datei", array()), "d/M/Y"), "html", null, true);
+            echo "</td>
+\t<td>";
+            // line 28
+            echo twig_escape_filter($this->env, $this->getAttribute($context["annonce"], "surface", array()), "html", null, true);
+            echo "</td>
+\t<td>";
+            // line 29
+            echo twig_escape_filter($this->env, $this->getAttribute($context["annonce"], "ville", array()), "html", null, true);
+            echo "</td>
+\t<td>";
+            // line 30
+            echo twig_escape_filter($this->env, $this->getAttribute($context["annonce"], "rue", array()), "html", null, true);
+            echo "</td>
+  <td>";
+            // line 31
+            echo twig_escape_filter($this->env, $this->getAttribute($context["annonce"], "prixf", array()), "html", null, true);
+            echo "</td>
+  <td>";
+            // line 32
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["annonce"], "datef", array()), "d/M/Y"), "html", null, true);
+            echo "</td>
+
+
+
+</tr>
+
+
+  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['annonce'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 40
+        echo "</table>
+</div>
+";
+        
+        $__internal_a615975e435ab3dd3e92c31adfe7687e4154a2c02afe3a985e8435d2c6b84273->leave($__internal_a615975e435ab3dd3e92c31adfe7687e4154a2c02afe3a985e8435d2c6b84273_prof);
+
+    }
+
+    public function getTemplateName()
+    {
+        return "AGPlatformBundle:Agence:vvendu.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  109 => 40,  95 => 32,  91 => 31,  87 => 30,  83 => 29,  79 => 28,  75 => 27,  71 => 26,  66 => 25,  62 => 24,  40 => 4,  34 => 3,  11 => 1,);
+    }
+}
+/* {% extends "AGPlatformBundle:Agence:layoutheader.html.twig" %}*/
+/* */
+/* {% block offset %}*/
+/* <h1 class="intro"> Les maisons vendues  <i class="fa fa-hand-o-down" aria-hidden="true"></i>*/
+/* <div class="container">*/
+/* <table class="table">*/
+/* <tr>*/
+/*   <th>owner</th>*/
+/*   <th>prixI</th>*/
+/*   <th>dateI</th>*/
+/*   <th>surface</th>*/
+/*   <th>ville</th>*/
+/*   <th>rue</th>*/
+/* <th>prixF </th>*/
+/* <th>dateF </th>*/
+/* */
+/* */
+/* */
+/* */
+/*  </tr>*/
+/* */
+/* */
+/* <tr>*/
+/*   {% for annonce in listannoncevendus %}*/
+/*     <td>{{ annonce.owner }}</td>*/
+/*     <td>{{ annonce.prix }}</td>*/
+/* 	<td>{{ annonce.datei|date("d/M/Y") }}</td>*/
+/* 	<td>{{ annonce.surface }}</td>*/
+/* 	<td>{{ annonce.ville }}</td>*/
+/* 	<td>{{ annonce.rue }}</td>*/
+/*   <td>{{ annonce.prixf }}</td>*/
+/*   <td>{{ annonce.datef|date("d/M/Y") }}</td>*/
+/* */
+/* */
+/* */
+/* </tr>*/
+/* */
+/* */
+/*   {% endfor %}*/
+/* </table>*/
+/* </div>*/
+/* {% endblock %}*/
+/* */
